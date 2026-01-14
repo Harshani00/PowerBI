@@ -103,8 +103,8 @@ DIVIDE([Close] - [Open], [Open])
   -  Negative value → Daily loss
 
   - Formatted as a percentage (%)
-
-📊 Key DAX Measures
+--
+## 📊 Key DAX Measures
 Cumulative Return
 
 Calculates the overall stock performance up to the selected date:
