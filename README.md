@@ -1,8 +1,25 @@
 ## Dashboard Preview
-<img src="Images/Img3.jpg" width="450"/>
-<img src="Images/Img1.jpg" width="450"/>
-<img src="Images/Img4.jpg" width="450"/>
-<img src="Images/Img5.jpg" width="450"/>
+## 📊 Dashboard Preview
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="Images/Img3.jpg" width="450"/>
+    </td>
+    <td align="center">
+      <img src="Images/Img1.jpg" width="450"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="Images/Img4.jpg" width="450"/>
+    </td>
+    <td align="center">
+      <img src="Images/Img5.jpg" width="450"/>
+    </td>
+  </tr>
+</table>
+
 # 📊 Google & Apple Stock Price Analysis Dashboard (2005–2025)
 
 
@@ -16,7 +33,7 @@ This project presents a comparative stock price analysis of **Apple** and **Goog
 - Stock price movements over time  
 - Trading volume behavior  
 - Daily, cumulative, and rolling returns  
-- Volatility and risk during major economic events  
+- Volatility and risk  
 
 The dashboard enables users to explore **gains, losses, and risk levels on specific dates** using interactive filters and custom DAX measures.
 
@@ -50,10 +67,10 @@ The raw dataset was cleaned and transformed before analysis:
   - Eliminated rows where `Volume = 0` to allow logarithmic volume scaling and accurate volatility calculations.
 
 - **Date Range Filtering**  
-  - Limited analysis to **2005–2025**, since Apple does not contain data before 2005.
+  - Limited analysis to **2005–2025**, since Google does not contain data before 2005.
 
 - **Data Validation**  
-  - Ensured correct data types, removed duplicates, and handled minor inconsistencies.
+  - Ensured correct data types and handled minor inconsistencies.
 
 ---
 
@@ -144,7 +161,7 @@ Volatility Target = 0.015
 
         Google: ~2.1%
 
-    Both remain slightly above the 1.5% volatility target but far below crisis levels.
+   - Both remain slightly above the 1.5% volatility target but far below crisis levels.
 ---
 🔍 Comparative Performance
 
