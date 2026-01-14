@@ -105,7 +105,7 @@ DIVIDE([Close] - [Open], [Open])
   - Formatted as a percentage (%)
 --
 ## 📊 Key DAX Measures
-Cumulative Return
+**Cumulative Return**
 
 Calculates the overall stock performance up to the selected date:
 
@@ -120,7 +120,7 @@ CALCULATE(
     )
 )
 
-Rolling Volatility
+**Rolling Volatility**
 - Computed as the standard deviation of daily returns over a 252-day rolling window (approximately one trading year).
 
 -  Used to measure short-term price risk and market uncertainty.
@@ -129,7 +129,7 @@ Rolling volatility indicates how much stock returns fluctuate over time.
 Higher values imply higher risk and uncertainty.
 Volatility Target (Constant Measure)
 
-Volatility Target = 0.015
+**Volatility Target = 0.015**
 
 - Represents a 1.5% daily volatility benchmark
 
