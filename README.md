@@ -73,7 +73,22 @@ The raw dataset was cleaned and transformed before analysis:
   - Ensured correct data types and handled minor inconsistencies.
 
 ---
+## 🛠 Tech Stack
 
+ -   Power BI
+
+        Power Query for data transformation
+
+        Interactive visuals and slicers
+
+  -  DAX
+
+        Daily Return
+
+        Cumulative Return
+
+        Rolling Volatility
+---
 ## 📐 Calculated Columns
 
 ### Daily Return
@@ -120,8 +135,8 @@ Volatility Target = 0.015
 
 - Used to compare observed volatility against a low-risk threshold
 ---
-📈 Key Insights (2005–2025)
-📉 Trading Volume Trends
+## 📈 Key Insights (2005–2025)
+**📉 Trading Volume Trends**
 
    - Trading volumes decreased steadily for both companies:
 
@@ -131,7 +146,7 @@ Volatility Target = 0.015
 
    - Indicates market maturity and increasing institutional participation.
 
-📊 Daily Returns
+**📊 Daily Returns**
 
   -  Average daily returns remained relatively stable despite declining volumes.
 
@@ -141,7 +156,7 @@ Volatility Target = 0.015
 
         Google: +0.10% with ~31,382,750 volume
 
-📈 Cumulative Returns
+**📈 Cumulative Returns**
 
  -   Q2 2025 recorded the highest cumulative returns:
 
@@ -151,7 +166,7 @@ Volatility Target = 0.015
 
  -   Reflects strong recovery momentum in the technology sector.
 
-⚠️ Rolling Volatility
+**⚠️ Rolling Volatility**
 
  -   2008 exhibited the highest volatility due to the global financial crisis.
 
@@ -163,7 +178,7 @@ Volatility Target = 0.015
 
    - Both remain slightly above the 1.5% volatility target but far below crisis levels.
 ---
-🔍 Comparative Performance
+## 🔍 Comparative Performance
 
   -  Apple and Google stock prices move largely in tandem, reflecting sector-wide trends.
 
@@ -175,31 +190,11 @@ Volatility Target = 0.015
 
         Slightly lower volatility in recent years compared to Google
 
-⚠️ Notes & Limitations
+## ⚠️ Notes & Limitations
 
   -  2025 data is partial (January–July) and may not represent full-year performance.
 
   -  High daily returns in 2025 reflect short-term market movements rather than annualized trends.
 ---
-🛠 Tech Stack
 
- -   Power BI
 
-        Power Query for data transformation
-
-        Interactive visuals and slicers
-
-  -  DAX
-
-        Daily Return
-
-        Cumulative Return
-
-        Rolling Volatility
-
-  -  Data Source
-
-        Kaggle CSV (Yahoo Finance)
----
-
-```dax
