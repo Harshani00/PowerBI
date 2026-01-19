@@ -93,8 +93,9 @@ The raw dataset was cleaned and transformed before analysis:
 Percentage price change from open to close within a single trading day (Gain/Loss):
 
 
-Daily Return =
+```Daily Return =
 DIVIDE([Close] - [Open], [Open])
+```
 
   - Positive value → Daily gain
 
