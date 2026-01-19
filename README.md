@@ -1,5 +1,5 @@
-## Dashboard Preview
-## 📊 Dashboard Preview
+ # 📊 Google & Apple Stock Price Analysis Dashboard (2005–2025)
+##  Dashboard Preview
 
 <table>
   <tr>
@@ -19,8 +19,6 @@
     </td>
   </tr>
 </table>
-
-# 📊 Google & Apple Stock Price Analysis Dashboard (2005–2025)
 
 
 
@@ -92,7 +90,7 @@ The raw dataset was cleaned and transformed before analysis:
 ## 📐 Calculated Columns
 
 ### Daily Return
-Percentage price change from open to close within a single trading day:
+Percentage price change from open to close within a single trading day (Gain/Loss):
 
 
 Daily Return =
@@ -108,7 +106,7 @@ DIVIDE([Close] - [Open], [Open])
 **Cumulative Return**
 
 Calculates the overall stock performance up to the selected date:
-
+```DAX
 Cumulative Return =
 VAR CurrentDate = MAX('World-Stock-Prices-Dataset'[Date])
 RETURN
@@ -119,6 +117,7 @@ CALCULATE(
         'World-Stock-Prices-Dataset'[Date] <= CurrentDate
     )
 )
+```
 
 **Rolling Volatility**
 - Computed as the standard deviation of daily returns over a 252-day rolling window (approximately one trading year).
@@ -127,6 +126,37 @@ CALCULATE(
 
 Rolling volatility indicates how much stock returns fluctuate over time.
 Higher values imply higher risk and uncertainty.
+```
+Rolling Volatility = 
+VAR CurrentDate = MAX('World-Stock-Prices-Dataset'[Date])
+VAR LookbackDays = 252
+VAR AvailablePeriod = 
+    CALCULATE(
+        COUNTROWS('World-Stock-Prices-Dataset'),  
+        ALL('World-Stock-Prices-Dataset'[Date]), 
+        'World-Stock-Prices-Dataset'[Date] <= CurrentDate
+    )
+VAR ActualDays = MIN(LookbackDays, AvailablePeriod)
+RETURN
+IF(
+    HASONEVALUE('World-Stock-Prices-Dataset'[Brand_Name]),
+    IF(
+        ActualDays >= 30,  
+        CALCULATE(
+            STDEV.P([Daily Return]),
+            ALL('World-Stock-Prices-Dataset'[Date]), 
+            DATESINPERIOD(
+                'World-Stock-Prices-Dataset'[Date],
+                CurrentDate,
+                -ActualDays,
+                DAY
+            )
+        ),
+        BLANK()  
+    ),
+    BLANK()
+)
+```
 Volatility Target (Constant Measure)
 
 **Volatility Target = 0.015**
