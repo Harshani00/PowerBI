@@ -1,4 +1,4 @@
- # 📊 Google & Apple Stock Price Analysis Dashboard (2005–2025)
+ # 📊Toy Model Performance Analysis Dashboard
 ##  Dashboard Preview
 
 <table>
