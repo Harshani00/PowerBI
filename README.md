@@ -75,10 +75,13 @@ The raw dataset was cleaned and transformed before analysis:
 
  -   Power BI
 
-        Power Query for data transformation
+        Power Query (data cleaning, transformation, custom columns, data type management)
 
-        Interactive visuals and slicers
-
+        DAX measures
+     
+        Visual storytelling (KPIs, trends)
+     
+        Interactivity (slicers,filters)
   -  DAX
 
         Daily Return
