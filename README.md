@@ -22,6 +22,7 @@
 
 This is a Power BI dashboard I built as part of a technical assignment for a job application.  
 It uses the publicly available Classic Models sample dataset (toy/scale model wholesaler) to demonstrate skills in:
+- Power Query 
 - DAX measures (YoY growth, AOV, average discount % with AVERAGEX)
 - Data modeling & relationships
 - Visual storytelling (KPIs, trends, maps, top-N)
