@@ -14,6 +14,11 @@
     <td align="center">
       <img src="Images/Dashboard3.jpg" width="450"/>
     </td>
+   <td align="center">
+      <img src="Images/Dashboard4.jpg" width="450"/>
+    </td>
+  </tr>
+   
   
   </tr>
 </table>
