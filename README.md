@@ -5,7 +5,12 @@
 <img src="Images/dashboard3.1.jpg" width="750"/>
 
 An interactive **Power BI analytics dashboard** designed to analyze Uber ride data and uncover insights related to **peak demand periods, pricing behavior, ride cancellations, payment preferences, and operational efficiency**.  
-This project demonstrates strong capabilities in **data cleaning, DAX modeling, and analytical storytelling**.
+This project demonstrates strong capabilities in 
+** 
+   - Power Query (data cleaning, transformation, custom columns)
+   - DAX modeling
+   - Analytical Storytelling
+
 
 ---
 
