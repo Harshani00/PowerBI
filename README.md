@@ -43,8 +43,7 @@ All design decisions, layout, calculations, and commentary are my own.
 ---
 
 ## 📂 Dataset
-- **Dataset Name**: Classic Models (toy/scale model sales)
-- **Source**: Public sample database (MySQL tutorial / Kaggle-style)
+- **Dataset**: Classic Models (toy/scale model sales)
 - **Time Period**: 2003–2005
 - **Granularity**: Order-line level (~2,900 rows)
 - **Main Fields**: Order No, Qty Ordered, Price Each, MSRP, Sales, Product Line, Country, Deal Size, Year, Quarter
